@@ -51,12 +51,12 @@
 
                               <div class="form-group">
                                   <label for="reserve-name">Name (Required)</label>
-                                  <input type="text" class="form-control" id="reserve-name">
+                                  <input type="text" class="form-control" id="inputName">
                               </div>
 
                               <div class="form-group">
                                   <label for="reserve-phone"></label>
-                                  <input type="text" class="form-control" id="reserve-phone">
+                                  <input type="text" class="form-control" id="inputPhoto">
                               </div>
 
                               <button type="submit" class="btn btn-primary submit">Link to Photo Image
@@ -222,8 +222,8 @@
           </div>
       </footer>
 
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large
-          modal</button>
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large
+          modal</button> -->
       <div class="modal fade bd-example-modal-xl" aria-hidden="true" id="resultsModal">
           <div class="modal-dialog modal-xl" role="document">
               <div class="modal-content">
@@ -241,14 +241,57 @@
       </div>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-      </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
           integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
       </script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+      </script>
+      <script>
+          $(document).ready(function () {
+
+
+              runFriendQuery();
+
+              function runFriendQuery() {
+
+                  $.ajax({
+                          url: "/api/friends",
+                          method: "GET"
+                      })
+                      .then(function (friendData) {
+                          console.log(friendData);
+                      })
+              }
+              $('#submitButton').on('click', function (event) {
+                  event.preventDefault();
+                  var currentURL = window.location.origin;
+                  var userInput = {
+                      name: $('#inputName').val().trim(),
+                      photo: $('#inputPhoto').val().trim(),
+                      scores: [
+                          $('#question1').val().trim(),
+                          $('#question2').val().trim(),
+                          $('#question3').val().trim(),
+                          $('#question4').val().trim(),
+                          $('#question5').val().trim(),
+                          $('#question6').val().trim(),
+                          $('#question7').val().trim(),
+                          $('#question8').val().trim(),
+                          $('#question9').val().trim(),
+                          $('#question10').val().trim()
+                      ]
+                  };
+                  $.post(currentURL + '/api/friends', userInput)
+                      .done(function (data) {
+                          console.log(data);
+
+                      })
+
+              })
+          })
       </script>
 
   </body>
