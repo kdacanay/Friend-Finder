@@ -1,0 +1,1 @@
+//----app's data held in friends.js as an array of objects
