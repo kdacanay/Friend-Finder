@@ -72,7 +72,7 @@
                       <h6>You find yourself seeking the opinions of others before deciding whether you like or dislike
                           something.</h6>
                       <select id="question1">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -85,7 +85,7 @@
                       <h5>Question 2</h5>
                       <h6>You think of yourself more of a leader of people than a follower of a leader.</h6>
                       <select id="question2">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -99,7 +99,7 @@
                       <h6>When a friend is describing a problem they are having, you tend to keep your opinion to
                           yourself and listen.</h6>
                       <select id="question3">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -112,7 +112,7 @@
                       <h5>Question 4</h5>
                       <h6>You make decisions, whether big or small, based on impulse and "gut feelings".</h6>
                       <select id="question4">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -125,7 +125,7 @@
                       <h5>Question 5</h5>
                       <h6>You usually need as much information as you can get before making a decision.</h6>
                       <select id="question5">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -138,7 +138,7 @@
                       <h5>Question 6</h5>
                       <h6>You make decisions based on how they affect you instead of how they affect others.</h6>
                       <select id="question6">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -151,7 +151,7 @@
                       <h5>Question 7</h5>
                       <h6>You consider yourself open to other people's opinions before forming your own.</h6>
                       <select id="question7">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -164,7 +164,7 @@
                       <h5>Question 8</h5>
                       <h6>You believe in factual information more than information based on opinions.</h6>
                       <select id="question8">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -178,7 +178,7 @@
                       <h6>If a friend tells you about their recent success, you feel genuinely happy for them and not
                           jealous or spiteful.</h6>
                       <select id="question9">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -193,7 +193,7 @@
                           situations
                       </h6>
                       <select id="question10">
-                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" disabled selected>Select your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -227,72 +227,83 @@
       <div class="modal fade bd-example-modal-xl" aria-hidden="true" id="resultsModal">
           <div class="modal-dialog modal-xl" role="document">
               <div class="modal-content">
+                  <div class="modal-header text-center">
+                      <h3 class="text-center" id="modal-intro">Meet Your New BFF!</h3>
+                  </div>
                   <br>
-                  <h3 class="text-center">Friend Match</h3>
-                  <br>
-                  <h5 id="matchName"></h5>
-                  <br>
-                  <img id="matchImage" width="500" src="">
-              </div>
-              <div class="modal-footer">
-                  <a href="/survey">Start Over</a>
+                  <div class="modal-body">
+                      <h5 id="matchName" class="text-center"></h5>
+                      <img id="matchImage" alt="No Image" style="width:100%;" src=''>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="/survey">Start Over</a>
+                  </div>
               </div>
           </div>
-      </div>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.js"
-          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-      </script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-      </script>
-      <script>
-          $(document).ready(function () {
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.5.1.js"
+              integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+              integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+              crossorigin="anonymous">
+          </script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+              integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+              crossorigin="anonymous">
+          </script>
+          <script>
+              $(document).ready(function () {
 
 
-              runFriendQuery();
+                  runFriendQuery();
 
-              function runFriendQuery() {
+                  function runFriendQuery() {
 
-                  $.ajax({
-                          url: "/api/friends",
-                          method: "GET"
-                      })
-                      .then(function (friendData) {
-                          console.log(friendData);
-                      })
-              }
-              $('#submitButton').on('click', function (event) {
-                  event.preventDefault();
-                  var currentURL = window.location.origin;
-                  var userInput = {
-                      name: $('#inputName').val().trim(),
-                      photo: $('#inputPhoto').val().trim(),
-                      scores: [
-                          $('#question1').val().trim(),
-                          $('#question2').val().trim(),
-                          $('#question3').val().trim(),
-                          $('#question4').val().trim(),
-                          $('#question5').val().trim(),
-                          $('#question6').val().trim(),
-                          $('#question7').val().trim(),
-                          $('#question8').val().trim(),
-                          $('#question9').val().trim(),
-                          $('#question10').val().trim()
-                      ]
-                  };
-                  $.post(currentURL + '/api/friends', userInput)
-                      .done(function (data) {
-                          console.log(data);
+                      $.ajax({
+                              url: "/api/friends",
+                              method: "GET"
+                          })
+                          .then(function (friendData) {
+                              console.log(friendData);
+                          })
+                  }
+                  $('#submitButton').on('click', function (event) {
+                      event.preventDefault();
+                      var currentURL = window.location.origin;
+                      var userInput = {
+                          name: $('#inputName').val().trim(),
+                          photo: $('#inputPhoto').val().trim(),
+                          scores: [
+                              $('#question1').val().trim(),
+                              $('#question2').val().trim(),
+                              $('#question3').val().trim(),
+                              $('#question4').val().trim(),
+                              $('#question5').val().trim(),
+                              $('#question6').val().trim(),
+                              $('#question7').val().trim(),
+                              $('#question8').val().trim(),
+                              $('#question9').val().trim(),
+                              $('#question10').val().trim()
+                          ]
+                      };
+                      var userScores = userInput.scores;
+                      var userName = userInput.name;
+                      console.log(userScores);
+                      $.post(currentURL + '/api/friends', userInput)
+                          .done(function (data) {
+                              //console.log('response = ' + JSON.stringify(data));
+                              //---display Best Match w/modal
+                              $('#modal-intro').prepend("Hey " + userName + ", ");
+                              $('#matchName').html(data.name);
+                              $('#matchImage').attr('src', data.photo);
+                              $('#resultsModal').modal();
 
-                      })
+                          })
 
+                  })
               })
-          })
-      </script>
+          </script>
 
   </body>
 

@@ -4,8 +4,8 @@ var friendsArray = [{
     name: 'Norman Bates',
     photo: 'https://cdn.onebauer.media/one/empire-images/features/560ebb1950e6c513721c2df5/norman-bates-psycho.jpg?quality=50&width=700&ratio=1-1&resizeStyle=aspectfit&format=jpg',
     scores: [
-        '4',
-        '4',
+        '2',
+        '1',
         '5',
         '3',
         '2',
@@ -21,10 +21,10 @@ var friendsArray = [{
     scores: [
         '2',
         '4',
+        '3',
         '1',
         '1',
-        '1',
-        '1',
+        '2',
         '1',
         '2',
         '1',
@@ -53,9 +53,9 @@ var friendsArray = [{
         '1',
         '5',
         '5',
-        '5',
-        '5',
-        '5',
+        '1',
+        '2',
+        '1',
         '5',
         '5',
         '1'
@@ -64,7 +64,7 @@ var friendsArray = [{
     name: 'Dr. King Schultz',
     photo: 'https://cdn.onebauer.media/one/empire-images/features/560ebb1950e6c513721c2df5/king-schultz-django-unchained.jpg?quality=50&width=700&ratio=1-1&resizeStyle=aspectfit&format=jpg',
     scores: [
-        '5',
+        '1',
         '4',
         '4',
         '2',
@@ -85,7 +85,7 @@ var friendsArray = [{
         '1',
         '3',
         '2',
-        '5',
+        '1',
         '1',
         '1',
         '5'
@@ -96,14 +96,14 @@ var friendsArray = [{
     scores: [
         '5',
         '2',
-        '3',
+        '1',
         '1',
         '5',
         '1',
         '3',
         '1',
         '1',
-        '5'
+        '2'
     ]
 }, {
     name: 'Keyser Soze',
