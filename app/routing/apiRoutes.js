@@ -13,8 +13,7 @@ var friendsList = require('../data/friends.js');
 module.exports = function (app) {
     //---API GET request to display a JSON of all possible friends
     app.get('/api/friends', function (req, res) {
-        res.json(friendsList);
-        console.log(req);
+        return res.json(friendsList);
     });
     //---a POST route /api/friends, to handle incoming
     //---survey results and compatibility logic
